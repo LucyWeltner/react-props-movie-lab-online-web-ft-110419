@@ -16,7 +16,7 @@ describe('<MovieCard />', () => {
   })
   
   it("assigns a default prop of null for the IMDBRating prop", () => {
-    expect(MovieCard.defaultProps.IMDBRating).to.equal(null)
+    expect(MovieCard.defaultProps.rating).to.equal(null)
   })
   
   it("assigns a default prop of ['No Genre(s) Found'] for the genres prop", () => {

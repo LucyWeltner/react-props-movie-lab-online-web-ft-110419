@@ -28,8 +28,8 @@ describe('<CardBack />', () => {
     expect(text).to.contain(genres.join(', '))
   })
   
-  it("renders 'No Rating Found' in an <h4> if the IMDBRating prop is null", () => {
-    const nullRating = shallow(<CardBack title="Rolling in the Deep" genres={['s']} IMDBRating={null} />)
+  it("renders 'No Rating Found' in an <h4> if the rating prop is null", () => {
+    const nullRating = shallow(<CardBack title="Rolling in the Deep" genres={['s']} rating={null} />)
     expect(nullRating.find('h4').text().toLowerCase()).to.equal('no rating found')
   })
   
